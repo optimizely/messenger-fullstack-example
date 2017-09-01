@@ -12,7 +12,8 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "optimizely-server-sdk": "^1.4.0"
+    "optimizely-server-sdk": "^1.4.0",
+    "request-promise": "^4.2.1"
   },
   "devDependencies": {
     "dotenv": "^4.0.0"

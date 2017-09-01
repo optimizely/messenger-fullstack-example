@@ -1,3 +1,4 @@
+'use strict';
 require('dotenv').config();
 
 const      express = require('express'),
@@ -84,6 +85,7 @@ app.post('/webhook/', function (req, res) {
       // Send receipt
       helpers.sendGenericMessage(sender, receipt);
       continue
+      }
     }
   }
   res.sendStatus(204);
