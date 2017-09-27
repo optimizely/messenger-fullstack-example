@@ -7,7 +7,7 @@ A Facebook messenger bot that uses Full Stack to test responses and interactions
 # Local Environment Setup
 
 ---
-Accout Setup
+Account Setup
 1. Create an Optimizely Full Stack project
 2. Access a Facebook Developer account, and create a new app for Messenger [](https://developers.facebook.com/docs/messenger-platform/guides/quick-start)
 3. Create a Verify Token for authentication with Facebook (select messages & messaging_postbacks for your Subscription fields)
