@@ -70,7 +70,7 @@ app.post('/webhook/', function (req, res) {
         // Adds random user ID generated to products for tracking if user clicks to buy
         optimizelyVariation === "single_product" ? helpers.addUserId(userId, products) : helpers.addUserIdSingleProd(userId, products);        
         // Sends chat bot response
-        variation ? helpers.sendGenericMessage(sender, responseData) : helpers.sendTextMessage(sender, "Hmm our stylists don't have your favorite styles. First go to www.atticandbutton.com to sign up.");
+        optimizelyVariation ? helpers.sendGenericMessage(sender, responseData) : helpers.sendTextMessage(sender, "Hmm our stylists don't have your favorite styles. First go to www.atticandbutton.com to sign up.");
         continue
     }
     if (event.postback) {
