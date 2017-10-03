@@ -61,14 +61,14 @@ app.post('/webhook/', function (req, res) {
         // Select a random category to respond with
         let category = categories[randomNumber];
         // Uses global activate function defined on line 9
-        let variation = optlyClient.activate('product_recs', userId);
+        let optimizelyVariation = optlyClient.activate('product_recs', userId);
 
         // Gets response from sample response json given category + variation
-        let responseData = recs.products[category][variation];
+        let responseData = recs.products[category][optimizelyVariation];
         let products = responseData.attachment.payload.elements;
 
         // Adds random user ID generated to products for tracking if user clicks to buy
-        variation === "original" ? helpers.addUserId(userId, products) : helpers.addUserIdSingleProd(userId, products);        
+        optimizelyVariation === "single_product" ? helpers.addUserId(userId, products) : helpers.addUserIdSingleProd(userId, products);        
         // Sends chat bot response
         variation ? helpers.sendGenericMessage(sender, responseData) : helpers.sendTextMessage(sender, "Hmm our stylists don't have your favorite styles. First go to www.atticandbutton.com to sign up.");
         continue
