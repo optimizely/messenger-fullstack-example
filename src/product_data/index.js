@@ -1,7 +1,7 @@
 // Hard coded product data in the format expected by Facebook
 module.exports.products = {
   scarf: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -84,7 +84,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
@@ -124,7 +124,7 @@ module.exports.products = {
   }
   },
   hats: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -207,7 +207,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
@@ -247,7 +247,7 @@ module.exports.products = {
   }
   },
   coat: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -330,7 +330,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
@@ -370,7 +370,7 @@ module.exports.products = {
   }
   },
   watch: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -453,7 +453,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
@@ -493,7 +493,7 @@ module.exports.products = {
   }
   },
   shirts: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -576,7 +576,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
@@ -616,7 +616,7 @@ module.exports.products = {
   }
   },
   bags: {
-    original: {
+    multiple_products: {
         "attachment": {
             "type": "template",
             "payload": {
@@ -699,7 +699,7 @@ module.exports.products = {
             }
         }
     },
-    variation: {
+    single_product: {
       "attachment": {
         "type": "template",
         "payload":{
